@@ -104,10 +104,14 @@ body {
 }
 header {
   padding-top: 2px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 800;
   width: 100%;
   border;
+}
+
+header h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 38px;
 }
 .extrabold a {
     text-decoration: none; /* Remove underline */
@@ -187,5 +191,32 @@ ul {
   top: -7px;
   color: #404040;
   font-size: 15px;
+}
+
+.post {
+  padding-top: 1px;
+  margin-bottom: 300px;
+}
+.post h4 {
+  margin: 0px;
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+.post-title {
+  font-size: 1.58rem;
+  font-weight: 600;
+    line-height: 2.25rem;
+    margin: 0px;
+}
+.post-date {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  color: #404040;
+  font-size: 18px;
+  padding-top: 8px;
+  margin: 0px;
+}
+
+.post{
 }
 /*# sourceMappingURL=local.css.map */

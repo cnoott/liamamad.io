@@ -9,7 +9,8 @@ order: 100
 
 {% block head %}
 <link rel="stylesheet" href="/assets/css/local.css" />
-
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preload" as="font" type="font/otf" href="/assets/fonts/Inter-Black.otf" crossorigin>
 <link rel="preload" as="font" type="font/otf" href="/assets/fonts/Inter-Bold.otf" crossorigin>
 <link rel="preload" as="font" type="font/otf" href="/assets/fonts/Inter-ExtraBold.otf" crossorigin>
@@ -37,8 +38,8 @@ order: 100
         }
 </script>
 {% endblock %}
+
 {% include "components/header.html" %}
-<div class="preloader" id="preloader"></div>
 {% block body %}
 <main>
   <h2>Hey, my name is Liam Amadio.</h2>

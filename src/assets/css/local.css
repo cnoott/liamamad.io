@@ -1,51 +1,90 @@
-
+/* PAGE-SPECIFIC STYLES FOR THE HOME PAGE */
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+@font-face {
+  font-family: "Mont";
+  src: url("/assets/fonts/Mont-Heavy.ttf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-ExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+/* Applying the fonts to elements */
 .black {
-    font-family: 'Inter', sans-serif;
-    font-weight: 900;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
 }
 
 .bold {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
 }
 
 .extrabold {
-    font-family: 'Inter', sans-serif;
-    font-weight: 800;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
 }
 
 .medium {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
 }
 
 .regular {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
 }
 
 .email {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 590;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 590;
 }
 
 .lootswap {
-  font-family: 'Mont', sans-serif;
-    font-weight: 800;
-    text-decoration: underline;
-    color: #6A74DF;
-    
+  font-family: "Mont", sans-serif;
+  font-weight: 800;
+  text-decoration: underline;
+  color: #6A74DF;
 }
 
 .separator {
   border: 0;
   border-bottom: 10px solid white;
   width: 40%;
-  margin: 20px 0; 
+  margin: 20px 0;
 }
 
 body {
-  font-family: 'Inter-Regular', sans-serif;
+  font-family: "Inter-Regular", sans-serif;
   margin-left: auto;
   margin-right: auto;
   max-width: 600px;
@@ -53,67 +92,74 @@ body {
   /*background: #12141A;*/
   color: black;
   line-height: 1.5rem;
-  padding: 10px
+  padding: 10px;
 }
+
 header {
   padding-top: 2px;
   width: 100%;
-  border;
 }
 
 header h1 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 38px;
 }
+
 .extrabold a {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Remove default purple color and inherit from parent */
-    transition: text-shadow 0.3s ease-in-out; /* Smooth transition for the glow effect */
-    text-decoration: none; /* Remove underline */
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Remove default purple color and inherit from parent */
+  transition: text-shadow 0.3s ease-in-out; /* Smooth transition for the glow effect */
+  text-decoration: none; /* Remove underline */
 }
 
 .extrabold a:hover {
-    text-shadow: 0 0 8px rgba(255, 255, 255, 1), 0 0 16px rgba(255, 255, 255, 0.8), 0 0 24px rgba(255, 255, 255, 0.6);
+  text-shadow: 0 0 8px rgb(255, 255, 255), 0 0 16px rgba(255, 255, 255, 0.8), 0 0 24px rgba(255, 255, 255, 0.6);
 }
-
 
 a:hover {
-    text-decoration: none; /* Ensure underline does not appear on hover */
+  text-decoration: none; /* Ensure underline does not appear on hover */
 }
+
 .inline-text {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .inline-text .email {
-    margin-left: 5px; /* Add some space between the two spans */
+  margin-left: 5px; /* Add some space between the two spans */
 }
 
 .bio-container {
   font-size: 1.05rem;
 }
+
 .bio-container p {
   padding: 0px;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+
 .title {
   font-weight: bold;
   padding: 0px;
   margin: 0px;
 }
+
 .bio-container div {
   margin: 0 10px;
 }
+
 .bio-container ul a {
   color: blue;
   text-decoration: none;
 }
+
 .blog-post {
   text-decoration: none;
   background-color: #DCEAFE;
@@ -126,18 +172,21 @@ ul {
 .blog a {
   color: black;
 }
+
 .blog-title {
   margin: 0px;
   padding: 0px;
   text-decoration: underline;
 }
+
 .blog-desc {
   margin: 0px;
   padding: 0px;
   color: #404040;
 }
+
 .date {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: 600;
   position: absolute;
   right: 10px;
@@ -150,19 +199,22 @@ ul {
   padding-top: 1px;
   margin-bottom: 300px;
 }
+
 .post h4 {
   margin: 0px;
   font-weight: normal;
   font-size: 1.1rem;
 }
+
 .post-title {
   font-size: 1.58rem;
   font-weight: 600;
-    line-height: 2.25rem;
-    margin: 0px;
+  line-height: 2.25rem;
+  margin: 0px;
 }
+
 .post-date {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: 600;
   color: #404040;
   font-size: 18px;
@@ -170,6 +222,6 @@ ul {
   margin: 0px;
 }
 
-.post{
-}
+
+
 /*# sourceMappingURL=local.css.map */

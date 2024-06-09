@@ -15,8 +15,6 @@ order: 100
 {% block head %}
 <link rel="stylesheet" href="/assets/css/local.css" />
 <link rel="stylesheet" href="/assets/css/critical.css" />
-<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
-<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
 
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/Inter-Black.otf" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/Inter-Bold.otf" crossorigin>
@@ -46,6 +44,7 @@ order: 100
 </script>
 {% endblock %}
 {% include "components/header.html" %}
+<div class="preloader" id="preloader"></div>
 {% block body %}
 <main>
   <h2>Hey, my name is Liam Amadio.</h2>

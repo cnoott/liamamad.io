@@ -1,0 +1,109 @@
+---
+title: 'liamamad.io'
+description: 'Software Engineer and Co-founder of lootswap'
+preloadImg: '/assets/images/landing.jpg'
+permalink: '/posts/coding-and-writing.html'
+eleventyNavigation:
+key: coding-and-writing
+order: 100
+---
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/local.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preload" as="font" type="font/otf" href="/assets/fonts/Inter-Black.otf" crossorigin>
+<link rel="preload" as="font" type="font/otf" href="/assets/fonts/Inter-Bold.otf" crossorigin>
+<link rel="preload" as="font" type="font/otf" href="/assets/fonts/Inter-ExtraBold.otf" crossorigin>
+<link rel="preload" as="font" type="font/otf" href="/assets/fonts/Inter-Medium.otf" crossorigin>
+<link rel="preload" as="font" type="font/otf" href="/assets/fonts/Inter-Regular.otf" crossorigin>
+<link rel="preload" as="font" type="font/ttf" href="/assets/fonts/Mont-Heavy.ttf" crossorigin>
+
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/favicons/favicon.png">
+<!-- Script for Netlify Identity -->
+<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script defer>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on('init', (user) => {
+      if (!user) {
+        window.netlifyIdentity.on('login', () => {
+          document.location.href = '/admin/';
+        });
+      }
+    });
+  }
+</script>
+{% endblock %}
+{% include "components/header.html" %}
+{% block body %}
+
+<main class="post">
+  <h1 class="post-title">The Relationship Between Coding and Writing</h1>
+  <p class="post-date">
+  Wed Jun 17 2024
+  </p>
+  <br/>
+  <section>
+    <!-- TODO: make chapters with anchors -->
+    <p>
+    I realized that, in my personal experience, writing and coding use a lot of the same cognitive processes.
+    </p>
+    <p>
+    Both are iterative, about structure, clarity, flow state, and <strong><i>soul.</i></strong>
+    </p>
+    <h3>The Iterative Process</h3>
+    <p>
+    Whenever I write something one or more people will see, I like to vomit a bunch of ideas (AKA rough draft),
+    then come back and <strong>remove anything unrelated, connect the ideas, and clean it up</strong> so that
+    it looks like I knew what I was doing the first time around. It's a process of prioritizing
+    <i>momentum over perfection.</i>
+    </p>
+
+    <p>
+    Coding is very much an iterative process. A lot of times, whenever you're working on a new challenge,
+    you don't yet have the complete idea of how you're supposed to solve the problem. So instead of sitting in
+    <i>decision paralysis</i>, you just start typing away in the process of <i>trial and error</i>. Once you have a solution that works, you come back and <strong>remove anything unrelated, keep the essentials, and clean it up.</strong> This process is known as <i>refactoring</i>.
+    </p>
+  </section>
+
+  <section>
+    <h3>Structure and Clarity</h3>
+
+    <p>
+    If you can remember back to your school years, you were taught that an essay should generally have an intro paragraph, thesis statement, body paragraphs, and a conclusion. Structure is important for a number of reasons, namely for clarity, logical flow, and readability.
+    </p>
+
+    <p>
+    Having a well-defined structure in your writing allows the reader to better connect ideas because there is a clear pattern to follow. This also makes it more enjoyable because it flows better for the reader and makes it easier for them to extract value from the text.
+    </p>
+
+    <p>
+    Writing good code is all about structure and clarity. In a professional environment, you aren't the only person that is going to be going through the code you write. Writing code that is self-explanatory and separated into components with a narrow purpose makes it easier to debug, make changes, and refactor. This is known as <i>separation of concerns</i>.
+    </p>
+  </section>
+
+  <section>
+    <h3>Flow State (aka being in the zone)</h3>
+    <p>
+    I would describe flow state as a hyper-focused mental state where your mind progresses
+    from idea to idea effortlessly. Everything else in the world disappears.
+    Your task can feel almost trivial, and better yet, it's deeply enjoyable. I live
+    for these moments as it makes me feel alive and at my most efficient.
+    </p>
+    <p>
+    Both writing and coding (and really any creative pursuit) benefit heavily from flow.
+    </p>
+  </section>
+
+  <section>
+    <h3>Soul</h3>
+    <p>
+    When something can be done in so many ways, it allows for self-expression. Within your
+    writing or code is a piece of you. The ideas had to pass through you, emerging from your
+    <i>soul</i>.
+    </p>
+  </section>
+  <a href="/">Back to home</a>
+</main>
+{% endblock %}
+

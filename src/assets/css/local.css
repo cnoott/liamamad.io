@@ -167,7 +167,8 @@ ul {
   padding: 12px;
   border-radius: 10px;
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 15px !important;
+  display: block;
 }
 
 .blog a {
@@ -237,14 +238,17 @@ ul {
 }
 
 figure {
-  margin: 2em auto;
+  margin: 2em auto !important;
   padding: 0;
-  max-width: 80%;
+  width: 100%;
+  max-width: 400px !important;
   text-align: center;
+  display: block;
 }
 
 figure img {
-  width: 100%;
+  width: 100% !important;
+  max-width: 100% !important;
   height: auto;
   display: block;
   border-radius: 4px;
@@ -256,6 +260,13 @@ figcaption {
   color: #666;
   font-size: 0.9em;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  figure {
+    width: 85% !important;
+    max-width: 350px !important;
+  }
 }
 
 /*# sourceMappingURL=local.css.map */

@@ -1,0 +1,146 @@
+---
+title: 'liamamad.io'
+description: 'Software Engineer'
+preloadImg: '/assets/images/landing.jpg'
+permalink: '/posts/my-nieces-art.html'
+eleventyNavigation:
+  key: coding-and-writing
+  order: 100
+---
+
+{% block head %}
+<link rel="stylesheet" href="/assets/css/local.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preload" as="font" type="font/otf" href="/assets/fonts/Inter-Black.otf" crossorigin>
+<link rel="preload" as="font" type="font/otf" href="/assets/fonts/Inter-Bold.otf" crossorigin>
+<link rel="preload" as="font" type="font/otf" href="/assets/fonts/Inter-ExtraBold.otf" crossorigin>
+<link rel="preload" as="font" type="font/otf" href="/assets/fonts/Inter-Medium.otf" crossorigin>
+<link rel="preload" as="font" type="font/otf" href="/assets/fonts/Inter-Regular.otf" crossorigin>
+<link rel="preload" as="font" type="font/ttf" href="/assets/fonts/Mont-Heavy.ttf" crossorigin>
+<link rel="icon" type="image/png" sizes="64x64" href="/assets/favicons/favicon.png">
+<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script defer>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on('init', (user) => {
+      if (!user) {
+        window.netlifyIdentity.on('login', () => {
+          document.location.href = '/admin/';
+        });
+      }
+    });
+  }
+</script>
+{% endblock %}
+{% include "components/header.html" %}
+{% block body %}
+
+<main class="post">
+  <h1 class="post-title">My Nieces' Art and the Fundamental Forces of Human Behavior</h1>
+  <p class="post-date">
+    Thursday, March 26, 2025
+  </p>
+
+  <ol>
+    <li>My nieces' paintings</li>
+    <li>Forces of human behavior: chaos vs. order</li>
+    <li>The key is balance</li>
+  </ol>
+
+  <section>
+    <p>
+      For my birthday, both of my nieces made me some art. I have a growing collection of their work at this point, but this time something struck me about the differences in their styles.
+    </p>
+
+    <h3>Pictures of Their Art</h3>
+    <p>
+      Both are portraits of me. Notice the stark difference?
+      <br/>
+      The top one was drawn by Sophia and the other by Juliana.
+    </p>
+
+    <p>
+      To describe it like an art historian, Juliana’s work is in the style of <i>realism</i>, while Sophia’s is more like <i>abstract expressionism</i>.
+      <br/>
+      You can tell Juliana made choices to depict me as realistically as possible—with her color choices and the way I’m shaped.
+      <br/>
+      Sophia, on the other hand, didn’t consider how I looked in real life. She likely made choices based on how she felt, rather than what she thought would be the "best" choice.
+    </p>
+
+    <p>
+      What their work immediately expresses is their difference in personality.
+      <br/>
+      Juliana is a <i>straight arrow</i>—she does well in school, follows rules, and behaves.
+      <br/>
+      Sophia is <i>silly</i> and a bit on the chaotic side—she plays rough, laughs hysterically, and likes to get into a bit of trouble.
+    </p>
+
+    <p>
+      It’s fascinating that you can see these personality traits reflected in their art. And it tells us something deeper about the <strong>fundamental forces of human nature</strong>.
+    </p>
+  </section>
+
+  <section>
+    <h3>Order vs. Chaos (Conscious vs. Unconscious)</h3>
+    <p>
+      Carl Jung would describe some of the fundamental forces of human nature as the dynamic tension between the conscious and unconscious mind—in other words, order vs. chaos.
+    </p>
+
+    <p>
+      The conscious mind is the realm of structure and decision-making—the domain of order, ego, and rationality.
+      <br/>
+      The unconscious is everything emotional, dreamlike, and mythic.
+    </p>
+
+    <p>
+      Children have more direct access to the unconscious because their ego structures are not fully formed yet.
+    </p>
+
+    <p>
+      School plays a large role in developing those structures—which makes sense, since Juliana has been in school longer than Sophia.
+      <br/>
+      In school, you learn to "not do that," "keep your hands to yourself," and so on.
+      <br/>
+      It’s where you’re taught to keep your unconscious in check and follow rules.
+    </p>
+
+    <p>
+      Sophia has more direct access to the unconscious, which is why her decision-making—especially in her artistic expression—is likely more based on feeling than on the rules of realism.
+    </p>
+  </section>
+
+  <section>
+    <h3>The Key Is Balance</h3>
+    <p>
+      A large part of becoming a whole human being is what Jung calls <i>individuation</i>—the balancing of opposing forces:
+    </p>
+
+    <ul>
+      <li>Light / Dark</li>
+      <li>Masculine / Feminine</li>
+      <li>Reason / Instinct</li>
+      <li>Chaos / Order</li>
+    </ul>
+
+    <p>
+      The tension between these opposites is what <strong>fuels growth</strong>.
+      Each force has its own energy, danger, and potential.
+      The <strong>integration</strong> of these opposites is what makes us whole.
+    </p>
+
+    <p>
+      Although it may seem like we’re meant to “overcome” chaos, Jung actually encourages us to embrace it—and to find a healthy relationship with it.
+      <br/>
+      Too much order and you're neurotic. Too much chaos and you're lost.
+    </p>
+
+    <p>
+      Sophia and Juliana make great sisters because of their natural tendencies toward opposite forces.
+      <br/>
+      Juliana can teach Sophia to be more orderly and behaved, while Sophia can teach Juliana to let loose and tap into a more creative side of herself.
+    </p>
+  </section>
+
+  <a href="/">Back to home</a>
+</main>
+{% endblock %}

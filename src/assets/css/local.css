@@ -178,7 +178,14 @@ ul {
 .blog-title {
   margin: 0px;
   padding: 0px;
+  width: 82%;
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .blog-title {
+    width: 70%;
+  }
 }
 
 .blog-desc {

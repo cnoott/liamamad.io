@@ -267,6 +267,39 @@ figcaption {
     max-width: 350px !important;
   }
 }
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+  border-bottom: 1px dashed #666;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: max-content;
+  max-width: 250px;
+  background-color: #222;
+  color: #fff;
+  text-align: left;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 0.9em;
+  line-height: 1.4;
+  position: absolute;
+  z-index: 10;
+  bottom: 125%; /* positions tooltip above the text */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  white-space: normal;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 
 /*# sourceMappingURL=local.css.map */

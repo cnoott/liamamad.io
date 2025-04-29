@@ -236,17 +236,17 @@ ul {
 
 /* Image and figure styling */
 figure {
-  margin:  auto !important;
+  margin: 2em auto !important;
   padding: 0;
   width: 100%;
-  max-width: 100%;
+  max-width: 400px !important;
   text-align: center;
   display: block;
 }
 
 figure img {
   width: 100% !important;
-  max-width: calc(100% - 40px) !important;
+  max-width: 100% !important;
   height: auto;
   display: block;
   border-radius: 4px;
@@ -262,8 +262,8 @@ figcaption {
 
 @media (max-width: 768px) {
   figure {
-    width: calc(100% - 40px) !important;
-    max-width: 100%;
+    width: 85% !important;
+    max-width: 350px !important;
   }
 }
 
